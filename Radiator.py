@@ -1,5 +1,5 @@
 class Radiator:
-    _number_of_radiators = 0
+    number_of_radiators = 0
 
     def __init__(self, thermal_power_in_watts=0, color="Default", producer="Default", wheelbase_in_mm=0, price_in_uah=0,
                  connection_type="Default", type_of_radiator="Default"):
