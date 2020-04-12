@@ -10,7 +10,7 @@ class Radiator:
         self.price_in_uah = price_in_uah
         self.type = type_of_radiator
         self.connection_type = connection_type
-        Radiator._number_of_radiators += 1
+        Radiator.number_of_radiators += 1
 
     def __del__(self):
         print("Deleted radiator")
@@ -21,7 +21,7 @@ class Radiator:
 
     @staticmethod
     def create_radiator():
-        return Radiator._number_of_radiators
+        return Radiator.number_of_radiators
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
     print(Mishimoto)
     print(Koyo)
 
-    print("Number of created radiators", Radiator._number_of_radiators)
+    print("Number of created radiators", Radiator.number_of_radiators)
 
 
 main()
